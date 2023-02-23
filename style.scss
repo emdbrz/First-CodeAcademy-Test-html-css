@@ -2,11 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+span {
+  color: #ff3998;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 800;
 }
 // Header=====/
 header {
   min-height: 4rem;
+  min-width: 26.875rem;
   width: 100%;
   background-size: cover;
   display: flex;
@@ -19,6 +27,7 @@ header {
   }
 
   .nav-links {
+    margin-right: 5rem;
     align-items: center;
     a {
       text-decoration: none;
@@ -26,6 +35,25 @@ header {
       font-size: 0.75rem;
       padding: 0.25rem;
     }
+  }
+}
+// Lounch========/
+.lounch {
+  //   min-width: 27rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 2rem;
+
+  .box-right {
+    min-width: 15rem;
+  }
+  img {
+    overflow-wrap: break-word;
+    position: relative;
+    right: 3rem;
+    width: 15rem;
   }
 }
 @media (max-width: 48rem) {

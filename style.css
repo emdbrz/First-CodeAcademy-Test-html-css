@@ -2,11 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Nunito", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+span {
+  color: #ff3998;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 800;
 }
 
 header {
   min-height: 4rem;
+  min-width: 26.875rem;
   width: 100%;
   background-size: cover;
   display: flex;
@@ -19,6 +29,7 @@ header img {
   width: 10rem;
 }
 header .nav-links {
+  margin-right: 5rem;
   align-items: center;
 }
 header .nav-links a {
@@ -26,6 +37,23 @@ header .nav-links a {
   color: black;
   font-size: 0.75rem;
   padding: 0.25rem;
+}
+
+.lounch {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 2rem;
+}
+.lounch .box-right {
+  min-width: 15rem;
+}
+.lounch img {
+  overflow-wrap: break-word;
+  position: relative;
+  right: 3rem;
+  width: 15rem;
 }
 
 @media (max-width: 48rem) {
