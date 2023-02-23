@@ -20,12 +20,21 @@ header img {
 }
 header .nav-links {
   align-items: center;
-  display: none;
 }
 header .nav-links a {
   text-decoration: none;
   color: black;
   font-size: 0.75rem;
   padding: 0.25rem;
-  display: none;
+}
+
+@media (max-width: 48rem) {
+  .nav-links {
+    display: none;
+  }
+}
+@media (min-width: 48rem) {
+  .hide-dekstop {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
