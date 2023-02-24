@@ -10,26 +10,49 @@ span {
 }
 
 h1 {
+  font-size: 2.4rem;
+  font-weight: bolder;
+}
+
+h2 {
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+button {
+  background-color: #fff;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(30deg, rgb(243, 149, 179), rgb(189, 63, 103), rgb(253, 140, 29), rgb(143, 225, 194)) border-box;
+  border: 3px solid transparent;
+  border-radius: 50px;
 }
 
 header {
   min-height: 4rem;
-  min-width: 26.875rem;
-  width: 100%;
-  background-size: cover;
+  min-width: 26rem;
+  max-width: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
+  margin: 1rem 1rem;
 }
 header img {
-  width: 10rem;
+  width: 12rem;
+  padding-left: 1rem;
+}
+header .fa {
+  margin-right: 3.5rem;
 }
 header .nav-links {
-  margin-right: 5rem;
   align-items: center;
 }
 header .nav-links a {
@@ -40,20 +63,82 @@ header .nav-links a {
 }
 
 .lounch {
-  width: 100%;
+  width: 80%;
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: flex-start;
   margin-left: 2rem;
 }
+.lounch h4 {
+  padding: 3rem 0 1rem;
+}
+.lounch h1 {
+  padding-bottom: 1.5rem;
+}
+.lounch p {
+  padding-bottom: 1.5rem;
+}
 .lounch .box-right {
   min-width: 15rem;
+  max-width: 30rem;
+  z-index: 2;
 }
 .lounch img {
-  overflow-wrap: break-word;
   position: relative;
-  right: 3rem;
+  width: 30rem;
+  bottom: 1rem;
+  right: 8rem;
+  z-index: 1;
+}
+
+.banner {
+  min-width: 25rem;
+  max-width: 55rem;
+  height: 20rem;
+  background-image: url(./assets/assets/background.svg);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem 2rem;
+}
+.banner h2 {
+  padding-bottom: 1rem;
+}
+
+.sponsors {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 3rem 2rem;
+}
+.sponsors :first-child {
+  display: none;
+}
+.sponsors img {
+  width: 9rem;
+}
+
+.auction {
+  margin: 0 2rem;
+}
+.auction .nft-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  border-radius: 1rem;
+}
+.auction .nft-items img {
   width: 15rem;
+}
+.auction .nft-display-text {
+  background-color: rgb(227, 226, 226);
+  height: 8rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 @media (max-width: 48rem) {
