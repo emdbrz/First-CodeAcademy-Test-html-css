@@ -8,7 +8,7 @@ span {
   color: #ff3998;
 }
 h1 {
-  font-size: 2.4rem;
+  font-size: 2.75rem;
   font-weight: bolder;
 }
 h2 {
@@ -16,15 +16,16 @@ h2 {
   font-weight: 500;
 }
 h4 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.5rem;
 }
 button {
   background-color: #fff;
-  padding: 1rem 2.5rem;
+  padding: 1.5rem 3rem;
+  font-size: 1rem;
 
   background: linear-gradient(#fff, #fff) padding-box,
     linear-gradient(
@@ -35,14 +36,14 @@ button {
         rgb(143, 225, 194)
       )
       border-box;
-  border: 3px solid transparent;
+  border: 4px solid transparent;
   border-radius: 50px;
 }
 
 // Header=====/
 header {
   min-height: 4rem;
-  min-width: 26rem;
+  min-width: 24rem;
   max-width: 100%;
   display: flex;
   justify-content: space-between;
@@ -68,16 +69,16 @@ header {
 }
 // Lounch========/
 .lounch {
-  //   min-width: 27rem;
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: flex-start;
   margin-left: 2rem;
+  padding-bottom: 4rem;
 
   h4 {
-    padding: 3rem 0 1rem;
+    padding: 3rem 0 1.5rem;
   }
   h1 {
     padding-bottom: 1.5rem;
@@ -87,15 +88,15 @@ header {
   }
 
   .box-right {
-    min-width: 15rem;
+    min-width: 17rem;
     max-width: 30rem;
     z-index: 2;
   }
   img {
     position: relative;
-    width: 30rem;
-    bottom: 1rem;
-    right: 8rem;
+    width: 25rem;
+    bottom: 2rem;
+    right: 6rem;
     z-index: 1;
   }
 }
@@ -109,7 +110,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 2rem 2rem;
+  padding: 0 2rem 2rem;
 
   h2 {
     padding-bottom: 1rem;
@@ -133,7 +134,18 @@ header {
 // auction =====//
 .auction {
   margin: 0 2rem;
-
+  h2 {
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+  p {
+    padding-bottom: 1rem;
+    font-weight: 500;
+    a {
+      color: rgb(95, 95, 95);
+      font-weight: 600;
+    }
+  }
   .nft-items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -142,14 +154,71 @@ header {
     border-radius: 1rem;
 
     img {
-      width: 15rem;
+      width: 18rem;
     }
   }
   .nft-display-text {
     background-color: rgb(227, 226, 226);
     height: 8rem;
+    width: 18rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    h3 {
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      padding-bottom: 1rem;
+
+      img {
+        margin-right: 0.5rem;
+        width: 1rem;
+      }
+    }
+    h5 {
+      font-weight: 500;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      padding: 1rem 0;
+    }
+    p {
+      color: #909090;
+      font-size: 1.2rem;
+      font-weight: 00;
+    }
+    .color-orange {
+      color: rgb(240, 94, 15);
+    }
+    .innertext-2,
+    .innertext-1 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      align-items: center;
+    }
+  }
+}
+
+// lounch second part==//
+
+.second {
+  .box-right {
+    min-width: 12rem;
+    max-width: 30rem;
+    z-index: 2;
+    padding-bottom: 4rem;
+    border-bottom: 2px solid rgb(186, 185, 185);
+    .border-mobile {
+      border-top: 2px solid rgb(186, 185, 185);
+      border-bottom: 2px solid rgb(186, 185, 185);
+    }
+  }
+
+  img {
+    height: 35rem;
   }
 }
 
