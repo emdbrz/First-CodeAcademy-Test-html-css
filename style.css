@@ -28,9 +28,17 @@ p {
   line-height: 1.5rem;
 }
 
+a {
+  font-size: 1.2rem;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 button {
   background-color: #fff;
-  padding: 1.5rem 3rem;
+  padding: 1.2rem 3rem;
   font-size: 1rem;
   background: linear-gradient(#fff, #fff) padding-box, linear-gradient(30deg, rgb(243, 149, 179), rgb(189, 63, 103), rgb(253, 140, 29), rgb(143, 225, 194)) border-box;
   border: 4px solid transparent;
@@ -51,7 +59,9 @@ header img {
   padding-left: 1rem;
 }
 header .fa {
-  margin-right: 3.5rem;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+  color: #909090;
 }
 header .nav-links {
   align-items: center;
@@ -59,7 +69,6 @@ header .nav-links {
 header .nav-links a {
   text-decoration: none;
   color: black;
-  font-size: 0.75rem;
   padding: 0.25rem;
 }
 
@@ -80,6 +89,8 @@ header .nav-links a {
 }
 .lounch p {
   padding-bottom: 1.5rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.05rem;
 }
 .lounch .box-right {
   min-width: 17rem;
@@ -96,13 +107,16 @@ header .nav-links a {
 
 .banner {
   min-width: 25rem;
-  max-width: 55rem;
+  max-width: 80rem;
   height: 20rem;
   background-image: url(./assets/assets/background.svg);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 0 2rem 2rem;
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: 90%;
+  padding: 2rem;
 }
 .banner h2 {
   padding-bottom: 1rem;
@@ -119,7 +133,7 @@ header .nav-links a {
   display: none;
 }
 .sponsors img {
-  width: 9rem;
+  height: 2.5rem;
 }
 
 .auction {
@@ -130,7 +144,7 @@ header .nav-links a {
   font-size: 2.5rem;
 }
 .auction p {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   font-weight: 500;
 }
 .auction p a {
@@ -192,18 +206,85 @@ header .nav-links a {
 }
 
 .second .box-right {
-  min-width: 12rem;
-  max-width: 30rem;
   z-index: 2;
   padding-bottom: 4rem;
   border-bottom: 2px solid rgb(186, 185, 185);
+  position: relative;
+  width: 25rem;
+  bottom: 2rem;
+  right: 25rem;
+  z-index: 1;
+}
+.second .box-right p,
+.second .box-right button {
+  width: 12rem;
 }
 .second .box-right .border-mobile {
+  width: 12rem;
   border-top: 2px solid rgb(186, 185, 185);
   border-bottom: 2px solid rgb(186, 185, 185);
 }
 .second img {
-  height: 35rem;
+  height: 30rem;
+  position: relative;
+  width: 25rem;
+  top: 1.5rem;
+  left: 5rem;
+}
+
+.ft-navigation {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+.ft-navigation .ft-socials img {
+  padding-bottom: 1rem;
+}
+.ft-navigation .ft-socials p {
+  padding-bottom: 2rem;
+  font-weight: 500;
+}
+.ft-navigation .ft-socials .fa-brands {
+  color: #909090;
+  padding-right: 1rem;
+  font-size: 1.2rem;
+  padding-bottom: 3rem;
+}
+.ft-navigation .ft-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+.ft-navigation .ft-grid h3 {
+  padding-bottom: 1rem;
+  color: #909090;
+  font-weight: 600;
+}
+.ft-navigation .ft-grid ul {
+  list-style: none;
+}
+.ft-navigation .ft-grid ul li {
+  padding-bottom: 1rem;
+}
+.ft-navigation .ft-grid ul li a {
+  text-decoration: none;
+  color: #909090;
+  font-weight: 500;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 6rem 2rem;
+  color: #909090;
+}
+.copyright .hide-mobile {
+  display: none;
 }
 
 @media (max-width: 48rem) {
@@ -212,7 +293,54 @@ header .nav-links a {
   }
 }
 @media (min-width: 48rem) {
+  body {
+    margin: 0rem 3rem;
+  }
+  button {
+    padding: 1.5rem 4rem;
+  }
+  header {
+    max-width: 80rem;
+  }
   .hide-dekstop {
     display: none;
+  }
+  .lounch h1 {
+    font-size: 6rem;
+  }
+  .lounch .box-right {
+    min-width: 38rem;
+  }
+  .lounch img {
+    position: relative;
+    width: 50rem;
+    top: 4rem;
+    right: 0;
+    z-index: 1;
+  }
+  .banner {
+    border-radius: 1rem;
+    padding-bottom: 4rem;
+  }
+  .sponsors {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding-top: 6rem;
+    gap: 6rem;
+    margin: 0;
+  }
+  .sponsors :first-child {
+    display: inherit;
+  }
+  .ft-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .ft-navigation .ft-grid {
+    display: flex;
+  }
+  .copyright .hide-mobile {
+    display: inherit;
   }
 }/*# sourceMappingURL=style.css.map */
