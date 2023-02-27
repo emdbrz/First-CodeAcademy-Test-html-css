@@ -21,11 +21,13 @@ h2 {
 
 h4 {
   font-size: 1.2rem;
+  font-weight: 600;
 }
 
 p {
   font-size: 1.2rem;
   line-height: 1.5rem;
+  color: #525252;
 }
 
 a {
@@ -60,7 +62,7 @@ header img {
   padding-left: 1rem;
 }
 header .fa {
-  margin-right: 3rem;
+  margin-right: 2rem;
   font-size: 1.5rem;
   color: #909090;
 }
@@ -70,7 +72,7 @@ header .nav-links {
 header .nav-links a {
   text-decoration: none;
   color: black;
-  padding: 0.25rem;
+  padding: 0.5rem;
 }
 
 .lounch {
@@ -82,9 +84,6 @@ header .nav-links a {
   margin-left: 2rem;
   padding-bottom: 4rem;
 }
-.lounch h4 {
-  padding: 3rem 0 1.5rem;
-}
 .lounch h1 {
   padding-bottom: 1.5rem;
 }
@@ -93,7 +92,7 @@ header .nav-links a {
   line-height: 1.75rem;
   letter-spacing: 0.05rem;
 }
-.lounch .box-right {
+.lounch .box-left {
   min-width: 17rem;
   max-width: 30rem;
   z-index: 2;
@@ -109,7 +108,7 @@ header .nav-links a {
 .banner {
   min-width: 25rem;
   width: 100%;
-  height: 20rem;
+  height: 18rem;
   background-image: url(./assets/assets/background.svg);
   display: flex;
   flex-direction: column;
@@ -128,7 +127,7 @@ header .nav-links a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 2rem;
+  row-gap: 1rem;
   margin: 3rem 2rem;
 }
 .sponsors :nth-child(4) {
@@ -218,7 +217,11 @@ header .nav-links a {
   width: 100%;
 }
 
-.second .box-right {
+.second h2 {
+  font-weight: 800;
+  font-size: 3rem;
+}
+.second .box-left {
   width: 10rem;
   z-index: 2;
 }
@@ -229,7 +232,7 @@ header .nav-links a {
   position: relative;
   right: 2rem;
   border: 1.5px solid rgb(235, 235, 235);
-  width: 400px;
+  width: 44rem;
 }
 .second p {
   width: 14rem;
@@ -237,7 +240,7 @@ header .nav-links a {
 .second img {
   height: 29.5rem;
   position: relative;
-  top: 5.6rem;
+  top: 4.4rem;
   right: 10rem;
 }
 
@@ -271,8 +274,7 @@ header .nav-links a {
 }
 .ft-navigation .ft-grid h3 {
   padding-bottom: 1rem;
-  color: #909090;
-  font-weight: 600;
+  color: #525252;
 }
 .ft-navigation .ft-grid ul {
   list-style: none;
@@ -282,7 +284,7 @@ header .nav-links a {
 }
 .ft-navigation .ft-grid ul li a {
   text-decoration: none;
-  color: #909090;
+  color: #525252;
   font-weight: 500;
 }
 
@@ -314,7 +316,7 @@ header .nav-links a {
   .lounch h1 {
     font-size: 6rem;
   }
-  .lounch .box-right {
+  .lounch .box-left {
     min-width: 38rem;
   }
   .lounch img {
@@ -338,13 +340,36 @@ header .nav-links a {
   .sponsors :nth-child(4) {
     display: inherit;
   }
+  .second .border-mobile {
+    width: 100%;
+  }
+  .second h2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .second p {
+    width: 100%;
+    padding-bottom: 3rem;
+  }
+  .second .lineMiddle {
+    display: none;
+  }
+  .second img {
+    height: 30rem;
+    top: 4.5rem;
+  }
   .ft-navigation {
+    padding: 6rem 0 0 3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
   .ft-navigation .ft-grid {
     display: flex;
+    gap: 5rem;
+  }
+  .copyright {
+    padding-top: 3rem;
   }
   .copyright .hide-mobile {
     display: inherit;
